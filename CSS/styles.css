@@ -440,9 +440,14 @@ input:focus::placeholder {
   padding: 7px;
   height: 100%;
   width: 100%;
+  transition: all 0.3s;
   box-shadow: 11px 11px 29px -7px rgba(0, 0, 0, 0.11);
   -webkit-box-shadow: 11px 11px 29px -7px rgba(0, 0, 0, 0.11);
   -moz-box-shadow: 11px 11px 29px -7px rgba(0, 0, 0, 0.11);
+}
+
+.hebergements-card:hover {
+  transform: scale(1.07);
 }
 
 .hebergements-img {
@@ -551,9 +556,14 @@ input:focus::placeholder {
   height: 100%;
   border-radius: 23px;
   padding: 5px;
+  transition: all 0.3s;
   box-shadow: 11px 11px 29px -7px rgba(0, 0, 0, 0.11);
   -webkit-box-shadow: 11px 11px 29px -7px rgba(0, 0, 0, 0.11);
   -moz-box-shadow: 11px 11px 29px -7px rgba(0, 0, 0, 0.11);
+}
+
+.popularity-card:hover {
+  transform: scale(1.07);
 }
 
 .popularity-img {
@@ -750,10 +760,15 @@ input:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  transition: all 0.3s;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.activity-card:hover {
+  transform: scale(1.05);
 }
 
 .activity-card-large {
