@@ -285,24 +285,6 @@ input:focus::placeholder {
   .search-icon {
     display: block !important;
   }
-
-  .availability-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  }
-
-  .availability-icon {
-    align-self: auto;
-    position: absolute;
-    bottom: 25px;
-  }
-
-  .availability-text {
-    font-size: 16px;
-    margin-left: 40px;
-  }
 }
 
 /* Filters */
@@ -325,7 +307,8 @@ input:focus::placeholder {
   margin-bottom: 0;
   font-size: 20px;
   font-weight: 800;
-  margin-left: 40px;
+  float: left;
+  margin-top: 3%;
 }
 
 .filters {
@@ -369,6 +352,9 @@ input:focus::placeholder {
 /* Filters responsive */
 
 @media screen and (max-width: 992px) {
+  .filters-title {
+    float: none;
+  }
   .filters-container {
     padding-top: 3%;
   }
@@ -397,6 +383,11 @@ input:focus::placeholder {
   }
 }
 
+.availability-box {
+  display: flex;
+  align-items: center;
+}
+
 .availability-text {
   margin-top: 3%;
 }
@@ -411,6 +402,28 @@ input:focus::placeholder {
   text-align: center;
   vertical-align: middle;
   padding: 5px;
+  margin-top: 1.7%;
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .availability-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  .availability-icon {
+    align-self: auto;
+    position: absolute;
+    bottom: 33%;
+  }
+
+  .availability-text {
+    font-size: 16px;
+    margin-left: 40px;
+  }
 }
 
 /* Cards */
