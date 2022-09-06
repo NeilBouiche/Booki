@@ -286,8 +286,22 @@ input:focus::placeholder {
     display: block !important;
   }
 
+  .availability-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  .availability-icon {
+    align-self: auto;
+    position: absolute;
+    bottom: 25px;
+  }
+
   .availability-text {
-    font-size: 14px;
+    font-size: 16px;
+    margin-left: 40px;
   }
 }
 
@@ -306,8 +320,6 @@ input:focus::placeholder {
   margin-top: -15px;
   margin-left: -40px;
 }
-
-/* les margins negatifs ont ete ajoutee pour contrebalancer les positifs dans title et filters afins d'homogeneiser les espaces quand les elements wrap on peut aussi utiliser "gap" mais la compatibilite avec tout les navigateurs n'est pas sure */
 
 .filters-title {
   margin-bottom: 0;
@@ -369,9 +381,19 @@ input:focus::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+  .filters-title {
+    margin-left: 0;
+  }
+
   .filters-container {
     padding-top: 5%;
     margin-bottom: 5%;
+    margin-left: 0;
+  }
+
+  .filters {
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
 
